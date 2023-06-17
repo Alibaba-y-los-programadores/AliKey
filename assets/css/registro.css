@@ -7,7 +7,7 @@ body {
   }
   
   form {
-    padding: 50px 55px;
+    padding: 10px 55px;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     text-align: center;
@@ -22,19 +22,19 @@ body {
   
   h2 {
     color: #283629;
-    font-size: 35px;
-    margin:10%;
+    font-size: 30px;
+    margin:2%;
   }
   
   label {
     color: #283629;
     font-size: 15px;
     font-weight: 600;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
   
   input,textarea {
-    padding: 17px 25px;
+    padding: 7px 25px;
     border-radius: 25px;
     margin-bottom: 20px;
     background-color: #e8e8e8;
