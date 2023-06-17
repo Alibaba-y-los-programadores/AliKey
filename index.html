@@ -10,7 +10,7 @@
 
 </head>
 <body>
-    <form>
+    <form id="form">
         <h2>Crear una cuenta nueva</h2>
         <div class="input-group">
             <label for="Usuario">Usuario</label>
@@ -26,14 +26,15 @@
             <input type="email" name="Email" id="email"placeholder=" Email">
    
             <label for="Contraseña">Contraseña</label>
-            <input type="password" name=" Contraseña" id="Contraseña"placeholder=" Contraseña">
+            <input type="password" name="Contraseña" id="Contraseña"placeholder=" Contraseña">
 
-            <label for="confirm password">Confirmar Contraseña</label>
-            <input type="password" name="Confirmar contraseña" id=" Ccontraseña"placeholder=" Confirmar Contraseña">
+            <label for="confirmpassword">Confirmar Contraseña</label>
+            <input type="password" name="Confirmarcontraseña" id="Ccontraseña"placeholder=" Confirmar Contraseña">
         </div>
         <input class="btn" type="submit" value="Crear cuenta">
         <p>¿Ya tiene una cuenta? <a href="#">Ingrese aquí</a></p>
+        <p class="warnings" id="warnings"></p>
     </form>
-   
+   <script src="./assets/script/registro.js"></script>
 </body>
 </html>
