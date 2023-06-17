@@ -1,5 +1,5 @@
+
 body {
-    font-family: Arial, Arial, Helvetica, sans-serif;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -23,6 +23,7 @@ body {
   h2 {
     color: #283629;
     font-size: 35px;
+    margin:10%;
   }
   
   label {
