@@ -1,14 +1,14 @@
 body {
   min-height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: relative;
+  justify-content: relative;
 }
 
 form {
-  padding: 10px 55px;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 20px;
+  padding: 10px 100px;
+  box-shadow: 0 0 0px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 0px;
   text-align: center;
   width: 330px;
 }

@@ -4,3 +4,13 @@
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
 }
+.logo-container {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  z-index: 2; /* Asegura que el logotipo esté por encima de otros elementos */
+}
+
+.logo-container img {
+  max-width: 120px; /* Ajusta el tamaño del logotipo según tus necesidades */
+}

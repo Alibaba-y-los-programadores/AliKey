@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,34 +8,76 @@
     <link rel="stylesheet" href="assets/css/registro.css">
     <link rel="shortcut icon" href="assets/img/Ellipse 1.png">
     <link rel="stylesheet" href="assets/css/styles.css">
-
+    <link rel="stylesheet" href="assets/css/onboarding.css">
+    <link rel="stylesheet" href="assets/img/logo.png">
+    <style>
+        a {
+            color: white;
+        }
+    </style>
 </head>
+
 <body>
+    <div class="logo-container">
+        <img src="assets/img/logo.png" alt="Logo de Alikey">
+    </div>
+    <div class="image-stack">
+        <div class="image-stack__item image-stack__item—top">
+            <img src="assets/img/FondoDegradado2.png" alt="imagen de fondo">
+        </div>
+        <div class="text-overlay">
+            <h1><a href="#">¿Preocupado por la seguridad de tus contraseñas?</a></h1>
+            <p>¿Preocupado por la seguridad de tus contraseñas?</p> 
+            <p>Nuestro software de generador de contraseñas</p> 
+            <p>es la solución perfecta para proteger tus cuentas en línea.</p>  
+            <p>Con nuestra herramienta, puedes generar contraseñas fuertes y seguras al instante. </p>
+            <p>¿Por qué es importante? Porque las contraseñas débiles son fáciles de adivinar o hackear,</p>
+            <p>lo que pone en riesgo tus datos personales y confidenciales.</p>
+            <br>
+            <br>
+            <div class="columnas">
+                <div class="columna">
+                    <h3><a href="#">Mayor seguridad</a></h3>
+                    <p>Contraseñas encriptadas</p>
+                </div>
+                <div class="columna">
+                    <h3><a href="#">Facil de usar</a></h3>
+                    <p>Menu intuitivo</p>
+                </div>
+                <div class="columna">
+                    <h3><a href="#">Super Protect</a></h3>
+                    <p>Todo en un solo lugar</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <form id="form">
         <h2>Crear una cuenta nueva</h2>
         <div class="input-group">
             <label for="Usuario">Usuario</label>
-            <input type="text" name="Usuario" id="usuario"placeholder="Usuario">
+            <input type="text" name="Usuario" id="usuario" placeholder="Usuario">
 
             <label for="Nombre">Nombre</label>
             <input type="text" name="Nombre" id="nombre" placeholder="Nombre">
 
             <label for="Apellido">Apellido</label>
-            <input type="text" name="Apellido" id="apellido"placeholder=" Apellido">
+            <input type="text" name="Apellido" id="apellido" placeholder=" Apellido">
 
             <label for="Email">Email</label>
-            <input type="email" name="Email" id="email"placeholder=" Email">
-   
+            <input type="email" name="Email" id="email" placeholder=" Email">
+
             <label for="Contraseña">Contraseña</label>
-            <input type="password" name="Contraseña" id="Contraseña"placeholder=" Contraseña">
+            <input type="password" name="Contraseña" id="Contraseña" placeholder=" Contraseña">
 
             <label for="confirmpassword">Confirmar Contraseña</label>
-            <input type="password" name="Confirmarcontraseña" id="Ccontraseña"placeholder=" Confirmar Contraseña">
+            <input type="password" name="Confirmarcontraseña" id="Ccontraseña" placeholder=" Confirmar Contraseña">
         </div>
         <input class="btn" type="submit" value="Crear cuenta">
         <p>¿Ya tiene una cuenta? <a href="#">Ingrese aquí</a></p>
         <p class="warnings" id="warnings"></p>
     </form>
-   <script src="./assets/script/registro.js"></script>
+    <script src="./assets/script/registro.js"></script>
 </body>
+
 </html>

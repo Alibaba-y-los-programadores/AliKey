@@ -1,0 +1,55 @@
+.container {
+    position: relative;
+    overflow: hidden;
+}
+.image-stack{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    position: left;
+    width: 90%;
+}
+
+.image-stack__item—top{
+    height: relative;
+    grid-column: 1/span 8;
+    grid-row: 1; 
+    padding-top: 0%; 
+    left: 30%;
+}
+.image-stack__item—bottom{
+    grid-column: 4;
+    grid-row: 1; 
+} 
+.text-overlay {
+    position: absolute;
+    top: 90%;
+    left: 5%;
+    transform: translate(-0%, -0%);
+    text-align: center;
+    color: white;
+}
+
+.text-overlay h1 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.text-overlay p {
+    font-size: 14px;
+}
+
+.columnas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px; /* Ajusta el espacio entre las columnas según tus necesidades */
+    margin-top: 20px;
+}
+
+.columna h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.columna p {
+    font-size: 14px;
+}
