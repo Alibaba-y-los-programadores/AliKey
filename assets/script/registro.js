@@ -13,7 +13,7 @@ const form = document.getElementById("form")
 const parrafo = document.getElementById("warnings")
 
 // Agregar un evento de escucha al formulario cuando se envía
-form.addEventListener("submit", e => {
+form.addEventListener("submit", async (e) => {
     e.preventDefault() // Evitar que el formulario se envíe automáticamente
 
     let warnings = "" // Variable para almacenar los mensajes de advertencia
@@ -31,7 +31,7 @@ form.addEventListener("submit", e => {
     }
 
     if (usuario.value.length < 4 || !regexUsuario.test(usuario.value)) {
-        warnings += 'El usuario no es válido<br>';
+        warnings += 'El usuario no es válido <br>';
         entrar = true;
     }
 
@@ -78,6 +78,16 @@ form.addEventListener("submit", e => {
     if (entrar) {
         parrafo.innerHTML = warnings
     } else {
-        parrafo.innerHTML = "Enviado"
+        let estado = 1;
+        await fetch('http://127.0.0.1:3000/personas/', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({usuario: usuario.value, nombre: nombre.value, apellido: apellido.value, email: email.value, contraseña: password.value, habilitado: estado}),
+        }).then((response) => response.json()).then((data) => {
+            warnings = data.message
+        });
+        parrafo.innerHTML = warnings;
     }
 })

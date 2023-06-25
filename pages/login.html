@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alikey</title>
-    <link rel="stylesheet" href="../assets/css/login.css">
-    <link rel="shortcut icon" href="../assets/img/Ellipse 1.png">
-    <link rel="stylesheet" href="../assets/css/styles.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alikey</title>
+        <link rel="stylesheet" href="../assets/css/login.css">
+        <link rel="shortcut icon" href="../assets/img/Ellipse 1.png">
+        <link rel="stylesheet" href="../assets/css/styles.css">
+    </head>
+    <body>
+        <form id="form">
+            <h2>Un gusto tenerte devuelta </h2>
+            <div class="input-group">
+                <label for="usuario">Usuario</label>
+                <input type="text" name="Usuario" id="usuario"placeholder="Usuario" required>
 
-</head>
-<body>
-    <form id="form">
-        <h2>Un gusto tenerte devuelta </h2>
-        <div class="input-group">
-            <label for="Usuario">Usuario</label>
-            <input type="text" name="Usuario" id="usuario"placeholder="Usuario">
+                <label for="contraseña">Contraseña</label>
+                <input type="password" name="Contraseña" id="contraseña"placeholder=" Contraseña" required>
 
-            <label for="Contraseña">Contraseña</label>
-            <input type="password" name="Contraseña" id="Contraseña"placeholder=" Contraseña">
-
-        </div>
-        <p id="recordarme"><input type ='checkbox' name="recordarme">Recordarme <a id="recuperar" href="#">¿Olvido su contraseña?</a></p>
-        <input class="btn" type="submit" value="Ingresar">
-        <p class="warnings" id="warnings"></p>
-    </form>
-<script src="./assets/script/registro.js"></script>
-</body>
+            </div>
+            <p id="recordarme"><input type ='checkbox' name="recordarme">Recordarme <a id="recuperar" href="#">¿Olvido su contraseña?</a></p>
+            <input class="btn" type="submit" value="Ingresar">
+            <p class="warnings" id="warnings"></p>
+        </form>
+        <script src="../assets/script/login.js"></script>
+    </body>
 </html>
+
+<!--
+    -Se agrego la sentencia required a los input usuario y contrasenia
+    -Se creo un script para la clase login ya que el de registro era incopatible
+    -Se le agrego el '..' a source ya que nose estaba llegando a la carpeta script
+-->
