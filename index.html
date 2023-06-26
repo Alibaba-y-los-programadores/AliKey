@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,66 +10,87 @@
     <link rel="stylesheet" href="assets/css/onboarding.css">
     <link rel="stylesheet" href="assets/img/logo.png">
     <style>
-        a {
-            color: white;
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+        body{ margin: 20px}
+        .container{
+            display: grid;
+            grid-template-columns: 2 1fr;
+            background: url(assets/img/FondoDegradado2.png)center;
+            background-size: cover;
+            height: 100vh;
+        }
+        .left{ 
+            display: flex;
+            place-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        @media (max-width:900px){
+            .container{
+                grid-template-columns: 3 1fr;
+            }
         }
     </style>
 </head>
-
 <body>
-    <div class="logo-container">
-        <img src="assets/img/logo.png" alt="Logo de Alikey">
-    </div>
-    <div class="image-stack">
-        <div class="image-stack__item image-stack__item—top">
-            <img src="assets/img/FondoDegradado2.png" alt="imagen de fondo">
-        </div>
-        <div class="text-overlay">
-            <h1><a href="#">¿Preocupado por la seguridad de tus contraseñas?</a></h1>
-            <p>¿Preocupado por la seguridad de tus contraseñas?</p> 
-            <p>Nuestro software de generador de contraseñas</p> 
-            <p>es la solución perfecta para proteger tus cuentas en línea.</p>  
-            <p>Con nuestra herramienta, puedes generar contraseñas fuertes y seguras al instante. </p>
-            <p>¿Por qué es importante? Porque las contraseñas débiles son fáciles de adivinar o hackear,</p>
-            <p>lo que pone en riesgo tus datos personales y confidenciales.</p>
-            <br>
-            <br>
-            <div class="columnas">
-                <div class="columna">
-                    <h3><a href="#">Mayor seguridad</a></h3>
-                    <p>Contraseñas encriptadas</p>
-                </div>
-                <div class="columna">
-                    <h3><a href="#">Facil de usar</a></h3>
-                    <p>Menu intuitivo</p>
-                </div>
-                <div class="columna">
-                    <h3><a href="#">Super Protect</a></h3>
-                    <p>Todo en un solo lugar</p>
+    <div class="container">
+        <div class="left">
+            <div>
+                <div class="logo">
+                    <img src="assets/img/logo.png" alt="Alikey">
+                  </div>
+                <div class="image-stack">
+                    <div class="text-overlay">
+                        <h1>¿Preocupado por la seguridad de tus contraseñas?</h1>
+                        <p>¿Preocupado por la seguridad de tus contraseñas?</p> 
+                        <p>Nuestro software de generador de contraseñas</p> 
+                        <p>es la solución perfecta para proteger tus cuentas en línea.</p>  
+                        <p>Con nuestra herramienta, puedes generar contraseñas fuertes y seguras al instante. </p>
+                        <p>¿Por qué es importante? Porque las contraseñas débiles son fáciles de adivinar o hackear,</p>
+                        <p>lo que pone en riesgo tus datos personales y confidenciales.</p>
+                        <br>
+                        <br>
+                        <div class="columnas">
+                            <div class="columna">
+                                <h3>Mayor seguridad</h3>
+                                <p>Contraseñas encriptadas</p>
+                            </div>
+                            <div class="columna">
+                                <h3><a>Facil de usar</a></h3>
+                                <p>Menu intuitivo</p>
+                            </div>
+                            <div class="columna">
+                                <h3><a>Super Protect</a></h3>
+                                <p>Todo en un solo lugar</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="right">     
+        </div>
     </div>
-    
     <form id="form">
         <h2>Crear una cuenta nueva</h2>
         <div class="input-group">
-            <label for="usuario">Usuario</label>
+            <label for="Usuario">Usuario</label>
             <input type="text" name="Usuario" id="usuario" placeholder="Usuario">
 
-            <label for="nombre">Nombre</label>
+            <label for="Nombre">Nombre</label>
             <input type="text" name="Nombre" id="nombre" placeholder="Nombre">
 
-            <label for="apellido">Apellido</label>
+            <label for="Apellido">Apellido</label>
             <input type="text" name="Apellido" id="apellido" placeholder=" Apellido">
 
-            <label for="email">Email</label>
+            <label for="Email">Email</label>
             <input type="email" name="Email" id="email" placeholder=" Email">
 
             <label for="Contraseña">Contraseña</label>
             <input type="password" name="Contraseña" id="Contraseña" placeholder=" Contraseña">
 
-            <label for="Ccontraseña">Confirmar Contraseña</label>
+            <label for="confirmpassword">Confirmar Contraseña</label>
             <input type="password" name="Confirmarcontraseña" id="Ccontraseña" placeholder=" Confirmar Contraseña">
         </div>
         <input class="btn" type="submit" value="Crear cuenta">
@@ -79,5 +99,4 @@
     </form>
     <script src="./assets/script/registro.js"></script>
 </body>
-
 </html>

@@ -2,15 +2,25 @@
   margin: 0;
   padding: 0;
   font-size: 16px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
 }
-.logo-container {
-  position: absolute;
-  top: 50px;
-  left: 50px;
-  z-index: 2; /* Asegura que el logotipo esté por encima de otros elementos */
+.container {
+  display: flex;
+  flex-grow: 1;
+  height: 100vh;
+  .left img {
+    width: 90%;
+  }
 }
 
-.logo-container img {
-  max-width: 120px; /* Ajusta el tamaño del logotipo según tus necesidades */
+.logo {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  z-index: 1;
+}
+
+.logo img {
+  max-width: 100%;
+  height: auto;
 }

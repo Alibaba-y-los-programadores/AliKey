@@ -6,7 +6,7 @@ body {
 }
 
 form {
-  padding: 10px 55px;
+  padding: 10px 25px;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
   border-radius: 20px;
   text-align: center;
@@ -16,13 +16,13 @@ form {
 .input-group {
   display: flex;
   flex-direction: column;
-  text-align: left;
+  text-align: auto;
 }
 
 h2 {
   color: #283629;
   font-size: 30px;
-  margin: 2%;
+  margin: 1%;
 }
 
 label {
@@ -70,7 +70,7 @@ textarea::placeholder {
   font-size: 16px;
   color: #ffffff;
   border: 0;
-  width: 330px;
+  width: 300px;
   border-radius: 20px;
   background: #d21d3c;
   cursor: pointer;
@@ -84,9 +84,10 @@ textarea::placeholder {
   padding-top: 20px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 800px) {
   body {
-    padding: 30px;
+    margin: 0;
+    padding: 0;
   }
 
   form {
