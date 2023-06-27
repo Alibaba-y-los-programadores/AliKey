@@ -14,7 +14,7 @@
         .container{
             display: grid;
             grid-template-columns: 2 1fr;
-            background: url(assets/img/FondoDegradado2.png)center;
+            background: url(assets/img/FondoDegradado.png)center;
             background-size: cover;
             height: 100vh;
         }
@@ -74,27 +74,28 @@
         <h2>Crear una cuenta nueva</h2>
         <div class="input-group">
             <label for="Usuario">Usuario</label>
-            <input type="text" name="Usuario" id="usuario" placeholder="Usuario">
+            <input type="text" name="Usuario" id="usuario" placeholder="Usuario" required>
 
             <label for="Nombre">Nombre</label>
-            <input type="text" name="Nombre" id="nombre" placeholder="Nombre">
+            <input type="text" name="Nombre" id="nombre" placeholder="Nombre" required>
 
             <label for="Apellido">Apellido</label>
-            <input type="text" name="Apellido" id="apellido" placeholder=" Apellido">
+            <input type="text" name="Apellido" id="apellido" placeholder=" Apellido" required>
 
             <label for="Email">Email</label>
-            <input type="email" name="Email" id="email" placeholder=" Email">
+            <input type="email" name="Email" id="email" placeholder=" Email" required>
 
             <label for="Contraseña">Contraseña</label>
-            <input type="password" name="Contraseña" id="Contraseña" placeholder=" Contraseña">
+            <input type="password" name="Contraseña" id="Contraseña" placeholder=" Contraseña" required>
 
             <label for="confirmpassword">Confirmar Contraseña</label>
-            <input type="password" name="Confirmarcontraseña" id="Ccontraseña" placeholder=" Confirmar Contraseña">
+            <input type="password" name="Confirmarcontraseña" id="Ccontraseña" placeholder=" Confirmar Contraseña" required>
         </div>
         <input class="btn" type="submit" value="Crear cuenta">
         <p>¿Ya tiene una cuenta? <a href="#">Ingrese aquí</a></p>
         <p class="warnings" id="warnings"></p>
     </form>
     <script src="./assets/script/registro.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>

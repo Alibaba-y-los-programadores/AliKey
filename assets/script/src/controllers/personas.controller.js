@@ -1,7 +1,6 @@
 const database = require('../config/database');
 const mysql2 = require('mysql2');
 
-
 const readPersonas = (req, res) => {
     const { usuario } = req.params;
     const readQuery = `SELECT * FROM Personas WHERE usuario=?;`;
@@ -15,7 +14,6 @@ const readPersonas = (req, res) => {
         }else{
             res.json({message: 'El usuario no existe'});
         }
-        
     });
 };
 
@@ -27,7 +25,7 @@ const createPersonas = (req, res) => {
     database.query(query, (err, result) => {
         if(err) throw err;
         console.log(result);
-        res.send({message: 'Usuario Creado'});
+        res.send({message: 'Usuario Creado Exitosamente'});
     });
 };
 

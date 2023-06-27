@@ -40,3 +40,6 @@ junto con las tablas "personas", "categorias" y "paginas",
 y establecerán las relaciones adecuadas entre ellas. 
 Cabe destacar que los tipos de datos y las longitudes de las columnas pueden ajustarse según tus necesidades.
 */
+
+#Ver la lista de Personas Registradas
+SELECT * FROM alikey.personas;

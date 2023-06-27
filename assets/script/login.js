@@ -14,22 +14,28 @@ form.addEventListener("submit", async (e) => {
     
 
     if(user.value.length < 4 || !regexUsuario.test(user.value)){
-        warnings += 'El usuario no es válido<br>';
+        warnings = 'El usuario no es válido';
         entrar = true;
     }
 
     if(pass.value.length < 8){
-        warnings += 'Usuario o Contraseña incorrecta<br>';
+        warnings = 'Usuario o Contraseña incorrecta';
         entrar = true;
     }else if(!regexPassword.test(pass.value)){
-        warnings += 'Usuario o Contraseña incorrecta<br>';
+        warnings = 'Usuario o Contraseña incorrecta';
         entrar = true;
     }
 
     if(entrar){
-        parrafo.innerHTML = warnings;
+        Swal.fire({
+            position: "center",
+            icon: "error",
+            title: warnings,
+            showConfirmButton: false,
+            timer: 1500,
+          });
     }else{
-        parrafo.innerHTML = "Login Aceptado!<br> Buscando en DB...";
+        // parrafo.innerHTML = "Login Aceptado!<br> Buscando en DB...";
         const usuario = user.value;
         const password = pass.value;
 
@@ -40,13 +46,18 @@ form.addEventListener("submit", async (e) => {
                     warnings = `Usuario o Contraseña incorrecto`;
                 }else{
                     if(usuario == data.usuario && password == data.contraseña){
-                        warnings = `Nombre: ${data.nombre} <br>Apellido: ${data.apellido}`
+                        Swal.fire({
+                            //luego de copiar aparece un pop up de exito
+                            position: "center",
+                            icon: "success",
+                            title: "Acceso Concedido!",
+                            showConfirmButton: false,
+                            timer: 2500,
+                          });
                     }else{
                         warnings = `Usuario o Contraseña incorrecta`;
-                    }
-                    
+                    } 
                 }
             })
-        parrafo.innerHTML = warnings;
     }
 });
