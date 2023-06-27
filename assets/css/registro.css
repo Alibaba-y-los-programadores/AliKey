@@ -1,16 +1,19 @@
 body {
   min-height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: center right;
+  justify-content: center right;
+  background-size: cover;
 }
 
 form {
-  padding: 10px 55px;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 20px;
-  text-align: center;
-  width: 330px;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .input-group {
@@ -21,8 +24,8 @@ form {
 
 h2 {
   color: #283629;
-  font-size: 30px;
-  margin: 2%;
+  font-size: 25px;
+  margin: 3%;
 }
 
 label {
@@ -34,9 +37,9 @@ label {
 
 input,
 textarea {
-  padding: 7px 25px;
+  padding: 7px 45px;
   border-radius: 25px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   background-color: #e8e8e8;
   border: 2px solid #e8e8e8;
   color: black;
@@ -49,10 +52,10 @@ textarea::placeholder {
 }
 
 .form-txt {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   display: flex;
   justify-content: space-between;
-  text-align: center;
+  text-align: left;
 }
 
 .form-txt a {
@@ -66,7 +69,7 @@ textarea::placeholder {
   font-size: 16px;
   color: #ffffff;
   border: 0;
-  width: 330px;
+  width: 170px;
   border-radius: 20px;
   background: #d21d3c;
   cursor: pointer;
@@ -77,17 +80,19 @@ textarea::placeholder {
   text-align: center;
   margin: auto;
   color: #B06AB3;
-  padding-top: 20px;
+  padding-top: 30px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 800px) {
   body {
-    padding: 30px;
+    margin: 20px;
+    padding: 20px;
   }
 
   form {
-    padding: 50px 30px;
-    width: 100%;
+    margin: 20px;
+    padding: 30px 30px;
+    width: 50%;
   }
 
   input {

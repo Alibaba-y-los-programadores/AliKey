@@ -1,0 +1,64 @@
+.container {
+    position: relative;
+    overflow: hidden;
+}
+.imagen-de-fondo{
+    display: grid;
+    grid-template-columns: (10, 1fr);
+    position: auto;
+    width: 100%;
+    background-size: cover;
+}
+
+.image-stack__item—top{
+    height: cover;
+    grid-column: 1/span 8;
+    grid-row: 1; 
+    padding-top: 0%; 
+    left: 30%;
+}
+.image-stack__item—bottom{
+    grid-column: grid;
+    grid-row: 1; 
+}
+.contenedor-overlay {
+    position: relative;
+    /* Ajusta el ancho y el alto del contenedor principal según tus necesidades */
+    width: 100%;
+    height: 100%;
+  } 
+.text-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 40px;
+    transform: translate(-0%, -0%);
+    text-align: center;
+    color: white;
+}
+
+.text-overlay h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.text-overlay p {
+    font-size: 14px;
+}
+
+.columnas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px; /* Ajusta el espacio entre las columnas según tus necesidades */
+    margin-top: 20px;
+}
+
+.columna h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.columna p {
+    font-size: 14px;
+}
