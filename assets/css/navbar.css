@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Dosis', sans-serif;
+    font-size: 16px;
+  }
+ 
+  body {
+    position: relative;
+    min-height: 100vh;
+}
+.header{
+    width: 290px;
+    height: 100%;
+  }
+
+.sideNav{
+    width: 290px;
+    height: 100%;
+    background-image: url(/assets/img/fondo2.png);
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px 30px 20px 0;
+  }
+
+.logo{
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .logo-img{
+    width: 90px;
+    margin-left: 90px;
+  }
+
+  .pBrand{
+    font-size: 26px;
+    color: grey;
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+  }
+
+.navLinks{
+    list-style: none;
+    position: relative;
+  }
+
+.search{
+   position: relative;
+   padding: 5px;
+   margin-left: 20px;
+  }
+
+  .search input{
+    height: 38px;
+    width: 225px;
+    padding: 0 20px;
+    font-size: 17px;
+    outline: none;
+    background-color: rgb(27, 10, 12);
+    border-radius: 30px;
+    border: solid 1px grey;
+    margin-bottom: 30px;
+  }
+
+
+.btn{
+    position: absolute;
+    top: 4.5px;
+    right: 4px;
+    background-color: rgb(37, 34, 34);
+    width: 55px;
+    height: 38px;
+    line-height: 40px;
+    text-align: center;
+    color: grey;
+    font-size: 20px;
+    border-radius: 0 20px 20px 0;
+    justify-content: space-around;
+    border: solid 1px grey;
+  }
+
+.navLinks li{
+    display: flex;
+    padding: 10px;
+  }
+
+.navLinks li a{
+    color: white;
+    text-decoration: none;
+    padding: 5px 8px;
+    display: flex;
+    align-items: center;
+  }
+  
+.navLinks li a i{
+    margin-right: 10px;
+    margin-left: 30px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .navLinks ul li a:hover{
+    left: 0;
+    top: 2%;
+    display: none;
+  }
+
+.navLinks li:hover a{
+    color:black;
+    background-color: #fff;
+    width: 100%;
+    height: 43px;
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 0 35px 30px 0;
+    box-shadow: 0 5px 10px rgb(88, 3, 3);
+    transition: 0.5s;
+  }
+
+.navLinks li:hover ~ .active{
+    display: block;
+}
+.linea{
+  margin: 10px 0 10px 30px;
+}
+
+/*-----------------responsive*--------------*/
+
+@media only screen and (max-width:600px){
+    .sideNav{
+        width: 110px;
+    }
+    .logo-img{
+        display: flex;
+        width: 75%;
+        margin: 0 0 40px 30px;
+    }
+
+    .pBrand{
+      display: none;
+    }
+
+    .search input{
+      width: 25px;
+      margin-bottom: 10px;
+    }
+
+    .btn{
+      border-radius: 30px;
+      background-color: #fff;
+    }
+
+    .navLinks li a p{
+      display: none;
+
+    }
+
+    .navLinks li a i{
+      margin-right: 0;
+    }
+
+    .navLinks li a{
+      justify-content: center;
+    }
+
+    .linea{
+      margin: 5px;
+    }
+}
+
+@media only screen and (max-width:1025px){
+
+}
+
+@media only screen and (max-width:1250px){
+
+}
