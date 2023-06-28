@@ -1,6 +1,11 @@
 .container {
     position: relative;
     overflow: hidden;
+    display: grid;
+    grid-template-columns: 2 1fr;
+    background-image: url(../img/FondoDegradado.png);
+    background-size: cover;
+    height: 100vh;
 }
 .imagen-de-fondo{
     display: grid;
@@ -20,6 +25,10 @@
 .image-stack__item—bottom{
     grid-column: grid;
     grid-row: 1; 
+}
+.title{
+    font-size: 30px;
+    color: white; 
 }
 .contenedor-overlay {
     position: relative;
