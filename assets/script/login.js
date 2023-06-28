@@ -1,7 +1,5 @@
-
 const user = document.getElementById("usuario");
 const pass = document.getElementById("contraseña");
-const parrafo = document.getElementById("warnings");
 
 form.addEventListener("submit", async (e) => {
     
@@ -9,7 +7,6 @@ form.addEventListener("submit", async (e) => {
     let warnings = "";
     let regexUsuario = /^[a-zA-Z0-9]+$/;
     let regexPassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&{}()[\]^<>\\|_~.'"#,])([A-Za-z\d@$!%*?&{}()[\]^<>\\|_~.'"#,]){8,}$/;
-    parrafo.innerHTML = "";
     let entrar = false;
     
 
@@ -35,7 +32,6 @@ form.addEventListener("submit", async (e) => {
             timer: 1500,
           });
     }else{
-        // parrafo.innerHTML = "Login Aceptado!<br> Buscando en DB...";
         const usuario = user.value;
         const password = pass.value;
 
@@ -54,10 +50,22 @@ form.addEventListener("submit", async (e) => {
                             showConfirmButton: false,
                             timer: 2500,
                           });
+                            setTimeout(() => {
+                                window.location.href = "navbar.html";
+                            }, 2500);
                     }else{
                         warnings = `Usuario o Contraseña incorrecta`;
                     } 
                 }
-            })
+            if(warnings != ""){
+                Swal.fire({
+                    position: "center",
+                    icon: "error",
+                    title: warnings,
+                    showConfirmButton: false,
+                    timer: 1500,
+                });
+            }
+            })    
     }
 });
