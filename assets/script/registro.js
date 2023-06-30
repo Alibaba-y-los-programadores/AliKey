@@ -10,7 +10,6 @@ const email = document.getElementById("email");
 const password = document.getElementById("Contraseña");
 const confirmpassword = document.getElementById("Ccontraseña");
 const form = document.getElementById("form");
-const parrafo = document.getElementById("warnings");
 
 // Agregar un evento de escucha al formulario cuando se envía
 form.addEventListener("submit", async (e) => {
@@ -23,7 +22,6 @@ form.addEventListener("submit", async (e) => {
   let regexLetras = /^[A-Za-z\s]+$/; // Expresión regular para validar que solo se ingresen letras
   let regexPassword =
     /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&{}()[\]^<>\\|_~.'"#,])([A-Za-z\d@$!%*?&{}()[\]^<>\\|_~.'"#,]){8,}$/; // Expresión regular para validar la fortaleza de la contraseña
-  parrafo.innerHTML = ""; // Limpiar el contenido del párrafo de advertencias
 
   if (usuario.value.length < 4 || !regexUsuario.test(usuario.value)) {
     warnings = "El usuario no es válido";
@@ -91,5 +89,9 @@ form.addEventListener("submit", async (e) => {
       showConfirmButton: false,
       timer: 2500,
     });
+    setTimeout(() => {
+      window.location.href = "pages/login.html";
+    }
+    , 2500);
   }
 });
