@@ -51,7 +51,7 @@ form.addEventListener("submit", async (e) => {
                             timer: 2500,
                           });
                             setTimeout(() => {
-                                window.location.href = "Dashboard.html";
+                                window.location.href = "dash_board.html";
                             }, 2500);
                     }else{
                         warnings = `Usuario o Contraseña incorrecta`;
