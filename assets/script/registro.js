@@ -27,10 +27,18 @@ form.addEventListener("submit", async (e) => {
     warnings = "El usuario no es válido";
     entrar = true;
   } // Validar el campo nombre
+  else if(nombre.value.length < 3) {
+    warnings = "El Nombre no es válido";
+    entrar = true;
+  }
   else if (!regexLetras.test(nombre.value)) {
     warnings = "El campo nombre solo puede contener letras";
     entrar = true;
   } // Validar el campo apellido
+  else if(apellido.value.length < 3) {
+    warnings = "El Apellido no es válido";
+    entrar = true;
+  }
   else if (!regexLetras.test(apellido.value)) {
     warnings = "El campo apellido solo puede contener letras";
     entrar = true;
