@@ -10,7 +10,6 @@ const email = document.getElementById("email");
 const password = document.getElementById("Contraseña");
 const confirmpassword = document.getElementById("Ccontraseña");
 const form = document.getElementById("form");
-const parrafo = document.getElementById("warnings");
 
 // Agregar un evento de escucha al formulario cuando se envía
 form.addEventListener("submit", async (e) => {
@@ -23,16 +22,23 @@ form.addEventListener("submit", async (e) => {
   let regexLetras = /^[A-Za-z\s]+$/; // Expresión regular para validar que solo se ingresen letras
   let regexPassword =
     /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&{}()[\]^<>\\|_~.'"#,])([A-Za-z\d@$!%*?&{}()[\]^<>\\|_~.'"#,]){8,}$/; // Expresión regular para validar la fortaleza de la contraseña
-  parrafo.innerHTML = ""; // Limpiar el contenido del párrafo de advertencias
 
   if (usuario.value.length < 4 || !regexUsuario.test(usuario.value)) {
     warnings = "El usuario no es válido";
     entrar = true;
   } // Validar el campo nombre
+  else if(nombre.value.length < 3) {
+    warnings = "El Nombre no es válido";
+    entrar = true;
+  }
   else if (!regexLetras.test(nombre.value)) {
     warnings = "El campo nombre solo puede contener letras";
     entrar = true;
   } // Validar el campo apellido
+  else if(apellido.value.length < 3) {
+    warnings = "El Apellido no es válido";
+    entrar = true;
+  }
   else if (!regexLetras.test(apellido.value)) {
     warnings = "El campo apellido solo puede contener letras";
     entrar = true;
@@ -91,5 +97,9 @@ form.addEventListener("submit", async (e) => {
       showConfirmButton: false,
       timer: 2500,
     });
+    setTimeout(() => {
+      window.location.href = "pages/login.html";
+    }
+    , 2500);
   }
 });
