@@ -1,73 +1,114 @@
 .container {
-    position: relative;
-    overflow: hidden;
-    display: grid;
-    grid-template-columns: 2 1fr;
-    background-image: url(../img/FondoDegradado.png);
-    background-size: cover;
-    height: 100vh;
-}
-.imagen-de-fondo{
-    display: grid;
-    grid-template-columns: (10, 1fr);
-    position: auto;
-    width: 100%;
-    background-size: cover;
+    display: flex;
+		flex-direction: row;
+		flex-grow: 1;
+		position: relative;
+		overflow: hidden;
 }
 
-.image-stack__item—top{
-    height: cover;
-    grid-column: 1/span 8;
-    grid-row: 1; 
-    padding-top: 0%; 
-    left: 30%;
-}
-.image-stack__item—bottom{
-    grid-column: grid;
-    grid-row: 1; 
-}
-.title{
-    font-size: 30px;
-    color: white; 
-}
-.contenedor-overlay {
-    position: relative;
-    /* Ajusta el ancho y el alto del contenedor principal según tus necesidades */
-    width: 100%;
-    height: 100%;
-  } 
-.text-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    margin: 40px;
-    transform: translate(-0%, -0%);
+.left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     text-align: center;
-    color: white;
+    background-image: url(/assets/img/FondoDegradado.png);
+    background-size: 100% 180%;
+    background-position: 0 1%;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.logo img {
+    width: 5rem;
+}
+
+.logo h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    width: 50px;
+}
+ 
+.text-overlay {
+    text-align: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 3rem;
 }
 
 .text-overlay h1 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
+    text-wrap: balance;
+    margin-bottom: 0.5rem;
+    max-width: 90%;
+    line-height: 1.4;
 }
 
 .text-overlay p {
-    font-size: 14px;
+    font-size: 0.9rem;
+    text-align: left;
+    text-wrap: balance;
+    width: 90%;
+    line-height: 1.4;
 }
 
 .columnas {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px; /* Ajusta el espacio entre las columnas según tus necesidades */
-    margin-top: 20px;
+    grid-gap: 0px; /* Ajusta el espacio entre las columnas según tus necesidades */
+    margin-top: 1rem;
 }
 
 .columna h3 {
-    font-size: 18px;
-    margin-bottom: 20px;
+    font-size: 0.7rem;
+    text-wrap: balance;
+    text-align: left;
+    margin-top: 0.5rem;
+    color: var(--grey);
+}
+
+.circulo-container {
+    display: flex;
+}
+.circulo {
+    background-color: var(--grey);
+    margin-top: 0.5rem;
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
 }
 
 .columna p {
-    font-size: 14px;
+    margin-top: 0.2rem;
+		font-size: 0.6rem;
+		text-wrap: balance;
+		text-align: left;
+		color: var(--grey);
+}
+
+.circulo-container {
+    display: flex;
+    gap: 0.2rem;
+}
+
+@media (max-width: 750px) {
+    .container {
+        flex-direction: column;
+        justify-content: stretch;
+    }
+    .left {
+        min-width: 100%;
+        background-size: 100% 300%;
+        background-position: 0 1%;
+        justify-content: flex-start;
+    }
 }
