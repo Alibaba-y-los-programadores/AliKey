@@ -1,15 +1,8 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "Dosis", sans-serif;
-  font-size: 16px;
-}
-
 body {
   position: relative;
   min-height: 100vh;
 }
+
 .header {
   width: 25vw;
   height: 100%;
@@ -26,27 +19,20 @@ body {
   padding: 20px 30px 20px 0;
 }
 
-.ali{
-  display: flex;
-  padding: 20% 40%;
-}
-
 .logo {
-  margin-left: 30%;
-
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
 }
 
-.logo-img {
-  width: 90%;
+.logo img {
+  width: 5rem;
 }
 
-.pBrand {
-  font-size: 26px;
-  color: white;
-  margin-top: 68%;
+.logo h2 {
+  font-size: 1.5rem;
   text-align: center;
-  font-family: "Times New Roman", Times, serif;
-  font-weight: 700;
+  width: 50px;
 }
 
 .navLinks {
@@ -135,23 +121,10 @@ body {
 
 /*-----------------responsive*--------------*/
 
-@media only screen and (max-width: 600px) {
-  .sideNav {
-    width: 110px;
-  }
-  .logo-img {
-    display: flex;
-    width: 75%;
-    margin: 0 0 40px 30px;
-  }
+@media only screen and (max-width: 850px) {
 
-  .pBrand {
+  .search {
     display: none;
-  }
-
-  .search input {
-    width: 25px;
-    margin-bottom: 10px;
   }
 
   .btn {
@@ -171,13 +144,22 @@ body {
     justify-content: center;
   }
 
+  .navLinks li:hover a {
+    background-color: transparent;
+    box-shadow: none;
+  }
+
   .linea {
-    margin: 5px;
+    display: none;
   }
 }
 
-@media only screen and (max-width: 1025px) {
-}
+@media only screen and (max-width: 450px) {
+  .logo img {
+    width: 4rem;
+  }
 
-@media only screen and (max-width: 1250px) {
+  .logo h2 {
+    display: none;
+  }
 }

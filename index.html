@@ -10,82 +10,131 @@
     <link rel="stylesheet" href="assets/css/onboarding.css"/>
   </head>
   <body>
-    <div class="container">
-      <div class="left">
-        <div>
-          <div class="logo">
-            <img src="assets/img/logo.png" alt="Alikey"/>
-            <h2 class="title">Alikey</h2>
-          </div>
-          <div class="image-stack">
-            <div class="text-overlay">
-              <h1>¿Preocupado por la seguridad de tus contraseñas?</h1>
-              <p>¿Preocupado por la seguridad de tus contraseñas?</p>
-              <p>Nuestro software de generador de contraseñas</p>
-              <p>es la solución perfecta para proteger tus cuentas en línea.</p>
-              <p>
-                Con nuestra herramienta, puedes generar contraseñas fuertes y
-                seguras al instante.
-              </p>
-              <p>
-                ¿Por qué es importante? Porque las contraseñas débiles son
-                fáciles de adivinar o hackear,
-              </p>
-              <p>
-                lo que pone en riesgo tus datos personales y confidenciales.
-              </p>
-              <br />
-              <br />
-              <div class="columnas">
-                <div class="columna">
-                  <h3>Mayor seguridad</h3>
-                  <p>Contraseñas encriptadas</p>
-                </div>
-                <div class="columna">
-                  <h3><a>Facil de usar</a></h3>
-                  <p>Menu intuitivo</p>
-                </div>
-                <div class="columna">
-                  <h3><a>Super Protect</a></h3>
-                  <p>Todo en un solo lugar</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+		<div class="container">
+			<div class="left">
+				<div class="logo">
+					<img src="assets/img/logo.png" alt="Alikey" />
+					<h2>Alikey</h2>
+				</div>
+				<div class="image-stack">
+					<div class="text-overlay">
+						<h1>
+							¿Preocupado por la seguridad de tus contraseñas?
+						</h1>
+						<p>
+							Nuestro software de generador de contraseñas es la
+							solución perfecta para proteger tus cuentas en
+							línea. Con nuestra herramienta, puedes generar
+							contraseñas fuertes y seguras al instante.
+						</p>
+						<p>
+							¿Por qué es importante? Porque las contraseñas
+							débiles son fáciles de adivinar o hackear, lo que
+							pone en riesgo tus datos personales y
+							confidenciales.
+						</p>
+						<div class="columnas">
+							<div class="columna">
+								<div class="circulo-container">
+									<div class="circulo"></div>
+									<h3>Mayor seguridad</h3>
+								</div>
+								<p>Contraseñas encriptadas</p>
+							</div>
+							<div class="columna">
+								<div class="circulo-container">
+									<div class="circulo"></div>
+									<h3>Facil de usar</h3>
+								</div>
+								<p>Menu intuitivo</p>
+							</div>
+							<div class="columna">
+								<div class="circulo-container">
+									<div class="circulo"></div>
+									<h3>Super Protect</h3>
+								</div>
+								<p>Todo en un solo lugar</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="right">
+				<form id="form">
+					<h2 class="form-title">
+						Crea una <br />
+						cuenta nueva
+					</h2>
+					<div class="input-group">
+						<label for="Usuario">Usuario</label>
+						<input
+							type="text"
+							name="Usuario"
+							id="usuario"
+							placeholder="Usuario"
+							required
+						/>
 
-    <div class="right">
-      <form id="form">    
-        <h2 class="form-title">
-            Crea una <br />
-            cuenta nueva
-        </h2>
-        <div class="input-group">
-          <label for="Usuario">Usuario</label>
-          <input type="text" name="Usuario" id="usuario" placeholder="Usuario" required/>
+						<label for="Nombre">Nombre</label>
+						<input
+							type="text"
+							name="Nombre"
+							id="nombre"
+							placeholder="Nombre"
+							required
+						/>
 
-          <label for="Nombre">Nombre</label>
-          <input type="text" name="Nombre" id="nombre" placeholder="Nombre" required/>
+						<label for="Apellido">Apellido</label>
+						<input
+							type="text"
+							name="Apellido"
+							id="apellido"
+							placeholder="Apellido"
+							required
+						/>
 
-          <label for="Apellido">Apellido</label>
-          <input type="text" name="Apellido" id="apellido" placeholder="Apellido" required>
+						<label for="Email">Email</label>
+						<input
+							type="email"
+							name="Email"
+							id="email"
+							placeholder="Email"
+							required
+						/>
 
-          <label for="Email">Email</label>
-          <input type="email" name="Email" id="email" placeholder="Email" required/>
+						<label for="Contraseña">Contraseña</label>
+						<input
+							type="password"
+							name="Contraseña"
+							id="Contraseña"
+							placeholder=" Contraseña"
+							required
+						/>
 
-          <label for="Contraseña">Contraseña</label>
-          <input type="password" name="Contraseña" id="Contraseña" placeholder=" Contraseña" required/>
+						<label for="confirmpassword">Confirmar Contraseña</label
+						>
+						<input
+							type="password"
+							name="Confirmarcontraseña"
+							id="Ccontraseña"
+							placeholder=" Confirmar Contraseña"
+							required
+						/>
 
-          <label for="confirmpassword">Confirmar Contraseña</label>
-          <input type="password" name="Confirmarcontraseña" id="Ccontraseña" placeholder=" Confirmar Contraseña" required/>
-          
-          <input class="btn-register" type="submit" value="Crear cuenta" />
-          <p>¿Ya tiene una cuenta? <a href="pages/login.html">Ingrese aquí</a></p>
-        </div>
-      </form>
-    </div>
+						<input
+							class="btn-register"
+							type="submit"
+							value="Crear cuenta"
+						/>
+						<p>
+							¿Ya tiene una cuenta? <a href="pages/login.html"
+								>Ingrese aquí</a
+							>
+						</p>
+					</div>
+				</form>
+			</div>
+		</div>
     <script src="./assets/script/registro.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>

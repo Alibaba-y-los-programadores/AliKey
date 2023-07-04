@@ -1,17 +1,6 @@
 body {
   min-height: 100vh;
   display: flex;
-  align-items: center right;
-  justify-content: center right;
-  background-size: cover;
-}
-
-.left {
-  display: flex;
-  place-items: center;
-  justify-content: center;
-  text-align: center;
-  height: 100vh;
 }
 
 .right {
@@ -19,7 +8,6 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-content: center;
   align-items: center;
   padding-top: 2rem;
 }
@@ -27,28 +15,28 @@ body {
 form  {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 47%;
+  justify-content: flex-start;
 }
+
 .form-title {
   color: #283629;
   font-size: 2.2rem;
   margin: 3%;
   align-self: self-start;
 }
+
 .input-group {
   display: flex;
   flex-direction: column;
   text-align: left;
-  gap:10px;
-width: 100%;
+  width: 100%;
 }
 
 label {
   color: #283629;
-  font-size: 15px;
+  font-size: 0.9rem;
   font-weight: 600;
+  margin-bottom: 0.2rem;
 }
 
 input,
@@ -59,25 +47,12 @@ textarea {
   border: 1px solid #cbc9c9;
   color: black;
   outline: none;
+  margin-bottom: 1rem;
 }
 
 input::placeholder,
 textarea::placeholder {
   color: #bbbbbb;
-}
-
-.form-txt {
-  margin-bottom: 25px;
-  display: flex;
-  justify-content: space-between;
-  text-align: left;
-}
-
-.form-txt a {
-  color: #b1b1b1;
-  font-size: 14px;
-  font-weight: 600;
-  text-decoration: none;
 }
 
 .btn-register {
@@ -92,25 +67,8 @@ textarea::placeholder {
   margin-top: 1rem;
 }
 
-@media (max-width: 900px) {
-  .container {
-    grid-template-columns: 3 1fr;
-  }
-}
-
-@media (max-width: 800px) {
-  body {
-    margin: 20px;
-    padding: 20px;
-  }
-
-  form {
-    margin: 20px;
-    padding: 30px 30px;
-    width: 50%;
-  }
-
-  input {
-    padding: 15px;
+@media (max-width: 750px) {
+  .right {
+      min-width: 100%;
   }
 }
