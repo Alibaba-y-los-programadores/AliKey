@@ -1,16 +1,25 @@
 body {
   min-height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-form {
-  padding: 10px 25px;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 20px;
-  text-align: center;
-  width: 330px;
+.right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+form  {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+form p, a{
+  color: #000;
 }
 
 .input-group {
@@ -20,7 +29,6 @@ form {
 }
 
 h2 {
-  color: #283629;
   font-size: 30px;
   margin: 1%;
 }
@@ -70,32 +78,20 @@ textarea::placeholder {
   font-size: 16px;
   color: #ffffff;
   border: 0;
-  width: 300px;
+  width: 100%;
   border-radius: 20px;
   background: #d21d3c;
   cursor: pointer;
 }
 
-.warnings {
-  width: 200px;
-  text-align: center;
-  margin: auto;
-  color: #B06AB3;
-  padding-top: 20px;
+@media (max-width: 750px) {
+  .right {
+      min-width: 100%;
+  }
 }
 
-@media (max-width: 800px) {
-  body {
-    margin: 0;
-    padding: 0;
-  }
-
-  form {
-    padding: 50px 30px;
-    width: 100%;
-  }
-
-  input {
-    padding: 15px;
+@media (max-width: 400px) {
+  .right {
+      padding: 2%;
   }
 }
