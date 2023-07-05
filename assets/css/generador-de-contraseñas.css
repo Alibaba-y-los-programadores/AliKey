@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.contenedor {
+    margin: 0 1rem;
+}
+
+h1 {
+    margin: 2rem 0;
+    text-align: center;
+    line-height: 1.4;
+    font-size: 1.5rem;
+}
+
+.subtitulo {
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+img {
+    margin: 1rem 0;
+    max-width: 100%;
+    height: 12rem;
+}
+
+.contenedor-imagen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contraseña {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#contraseña-generada {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    border: 1px solid #c2c2c2;
+    font-size: 1.1rem;
+    overflow: hidden;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.boton {
+    padding: .7rem;
+    border-radius: 1.5rem;
+    background-color: #E80B2A;
+    border: none;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: .9rem;
+    margin: 1rem 0;
+    width: 50%;
+    align-self: center;
+    cursor: pointer;
+}
+
+.boton:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.boton-guardar {
+    padding: .7rem;
+    border-radius: 1.5rem;
+    background-color: #E80B2A;
+    border: none;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: .9rem;
+    margin: 1rem 0;
+    width: 50%;
+    align-self: center;
+    cursor: pointer;
+}
+
+.boton-guardar:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.subtitulo-dos {
+    text-align: center;
+    font-size: 1rem;
+}
+
+#longitud-contraseña {
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.rango {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.rango button {
+    font-size: 1.2rem;
+    padding: .8rem;
+    background-color: #ffebdc;
+    border: 1px solid #5f5f5f;
+    cursor: pointer;
+}
+
+.rango button:hover {
+    border: 1px solid #350107;
+    color: #130002;
+}
+
+.rango input {
+    -webkit-appearance: none;
+    height: .2rem;
+    width: 100%;
+    background-color: #E80B2A;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+.rango input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #350107;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+
+.contenedor-caracteres {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.caracter {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.caracter label {
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.caracter input {
+    padding: .8rem;
+}
+
+.check {
+    cursor: pointer;
+    background-color: #fff;
+    appearance: none;
+    border: 2px solid #888;
+}
+
+.check:checked {
+    background-color: #E80B2A;
+}
+
+.boton-generar {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+
+#error {
+    text-align: center;
+    background-color: #350107;
+    margin: 1rem 0;
+    color: #fff;
+    font-size: .9rem;
+    line-height: 1.4;
+}
+
+.error {
+    padding: 1rem;
+}
+
+@media (min-width: 700px) {
+    h1 {
+        font-size: 2.4rem;
+        width: 80%;
+        margin: 2rem auto;
+    }
+
+    .contenedor-secundario {
+        display: flex;
+        gap: 4rem;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    img {
+        height: 25rem;
+    }
+
+    .contenedor-generador {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .contenedor-caracteres {
+        flex-direction: row;
+    }
+
+    .contraseña {
+        flex-direction: row;
+        gap: 1rem;
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+    #contraseña-generada {
+        width: 50%;
+    }
+
+    #copiar-contraseña {
+        align-self: flex-start;
+        width: 20%;
+    }
+
+    .contenedor-longitud {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        margin: 1rem 0;
+    }
+
+    .subtitulo-dos {
+        text-align: left;
+    }
+
+    .rango {
+        justify-content: flex-start;
+    }
+
+    .rango input {
+        width: 30%;
+    }
+
+    .boton-generar {
+        margin-top: 1rem;
+        width: 100%;
+    }
+
+    .boton-generar:hover {
+        transform: none
+    }
+
+
+}

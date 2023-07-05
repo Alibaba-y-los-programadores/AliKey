@@ -3,7 +3,7 @@ const mysql2 = require('mysql2');
 
 const readPersonas = (req, res) => {
     const { usuario } = req.params;
-    const readQuery = `SELECT * FROM Personas WHERE usuario=?;`;
+    const readQuery = `SELECT * FROM personas WHERE usuario=?;`;
 
     const query = mysql2.format(readQuery, [usuario]);
 
