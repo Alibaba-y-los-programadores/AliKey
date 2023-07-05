@@ -21,7 +21,7 @@ CREATE TABLE categorias (
     nombre VARCHAR(50),
     habilitado BOOLEAN,
     id_persona INT,
-    FOREIGN KEY (id_persona) REFERENCES Personas(id_persona)
+    FOREIGN KEY (id_persona) REFERENCES personas(id_persona)
 );
 
 # Crear la tabla "Paginas":
@@ -32,7 +32,7 @@ CREATE TABLE paginas (
     contraseña VARCHAR(100),
     habilitado BOOLEAN,
     id_categoria INT,
-    FOREIGN KEY (id_categoria) REFERENCES Categorias(id_categoria)
+    FOREIGN KEY (id_categoria) REFERENCES categorias(id_categoria)
 );
 
 /* Estos algoritmos crearán la base de datos "aliKey" 
