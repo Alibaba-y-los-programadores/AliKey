@@ -94,11 +94,6 @@ textarea::placeholder {
 @media (max-width: 750px) {
   .right {
       min-width: 100%;
-  }
-}
-
-@media (max-width: 400px) {
-  .right {
-      padding: 2%;
+      padding: 10%;
   }
 }
