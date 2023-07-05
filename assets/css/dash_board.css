@@ -124,22 +124,13 @@ div.container{
     padding: 1rem 0.5rem;
 }
 #item-btn{
-width: 188px;
-height: 60px;
-top: 500px;
-left:650px;
-outline: none;
-border: none;
-background: rgba(210, 29, 60, 1);
-transform: translate(50%, -50%);
-top: 50%;
-right: 50%;
-color: white;
-font-size: 1.2rem;
-margin-top: 95px;
-margin-bottom: 210px;
-position: absolute;
-
+    font-size: 16px;
+    color: #ffffff;
+    border: 0;
+    width: 100%;
+    border-radius: 20px;
+    background: #d21d3c;
+    cursor: pointer;
 }
 
 container-parent {
