@@ -1,4 +1,6 @@
-<h1 align="center">AliKey</h1>
+
+![AliKey](https://github.com/Alibaba-y-los-programadores/AliKey/assets/111541137/3b9023f5-cf37-4124-92ec-8ad4c38a35c6)
+
 
 El objetivo de nuestro proyecto fue diseñar y desarrollar una aplicación web que permita generar y almacenar contraseñas alfanuméricas de forma segura. Reconociendo la importancia de la seguridad en línea en nuestra era digital, nos propusimos crear una herramienta que ayude a los usuarios a proteger su información personal y brinde una experiencia cómoda al generar y administrar sus contraseñas.
 
