@@ -4,7 +4,8 @@
   "description": "",
   "main": "login.js",
   "scripts": {
-    "dev": "npx nodemon src/config/index.js"
+    "dev": "npx nodemon src/config/index.js",
+    "start": "node src/config/index.js"
   },
   "keywords": [],
   "author": "",

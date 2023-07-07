@@ -35,7 +35,7 @@ form.addEventListener("submit", async (e) => {
         const usuario = user.value;
         const password = pass.value;
 
-        await fetch(`http://127.0.0.1:3000/personas/${usuario}`)
+        await fetch(`containers-us-west-169.railway.app:6470/personas/${usuario}`)
             .then((response) => response.json())
             .then((data) => {
                 if(data.message){

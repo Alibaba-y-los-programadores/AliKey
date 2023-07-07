@@ -12,7 +12,7 @@
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
-    background: url(/assets/img/FondoDegradado.png);
+    background-image: url(/assets/img/FondoDegradado.png);
     background-size: 100% 180%;
     background-position: 0 1%;
     background-repeat: no-repeat;
