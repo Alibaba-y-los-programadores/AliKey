@@ -1,0 +1,99 @@
+body {
+  min-height: 100vh;
+  display: flex;
+}
+
+.right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+form  {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+form p, a{
+  color: #000;
+}
+
+.form-title {
+  color: #283629;
+  font-size: 2.2rem;
+  margin: 3%;
+  align-self: self-start;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  text-align: auto;
+}
+
+h2 {
+  font-size: 30px;
+  margin: 1%;
+}
+
+label {
+  color: #283629;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+input,
+textarea {
+  padding: 7px 25px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  background-color: #e8e8e8;
+  border: 2px solid #e8e8e8;
+  color: black;
+  outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #BBBBBB;
+}
+
+#recordarme{
+  text-align: justify;
+}
+
+.form-txt {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.form-txt a {
+  color: #b1b1b1;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.btn {
+  font-size: 16px;
+  color: #ffffff;
+  border: 0;
+  width: 100%;
+  border-radius: 20px;
+  background: #d21d3c;
+  cursor: pointer;
+}
+
+@media (max-width: 750px) {
+  .right {
+      min-width: 100%;
+      padding: 10%;
+  }
+}

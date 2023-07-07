@@ -1,0 +1,114 @@
+.container {
+    display: flex;
+		flex-direction: row;
+		flex-grow: 1;
+		position: relative;
+		overflow: hidden;
+}
+
+.left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    background-image: url(/assets/img/FondoDegradado.png);
+    background-size: 100% 180%;
+    background-position: 0 1%;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.logo img {
+    width: 5rem;
+}
+
+.logo h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    width: 50px;
+}
+ 
+.text-overlay {
+    text-align: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 3rem;
+}
+
+.text-overlay h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
+    text-wrap: balance;
+    margin-bottom: 0.5rem;
+    max-width: 90%;
+    line-height: 1.4;
+}
+
+.text-overlay p {
+    font-size: 0.9rem;
+    text-align: left;
+    text-wrap: balance;
+    width: 90%;
+    line-height: 1.4;
+}
+
+.columnas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0px; /* Ajusta el espacio entre las columnas según tus necesidades */
+    margin-top: 1rem;
+}
+
+.columna h3 {
+    font-size: 0.7rem;
+    text-wrap: balance;
+    text-align: left;
+    margin-top: 0.5rem;
+    color: var(--grey);
+}
+
+.circulo-container {
+    display: flex;
+}
+.circulo {
+    background-color: var(--grey);
+    margin-top: 0.5rem;
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+}
+
+.columna p {
+    margin-top: 0.2rem;
+		font-size: 0.6rem;
+		text-wrap: balance;
+		text-align: left;
+		color: var(--grey);
+}
+
+.circulo-container {
+    display: flex;
+    gap: 0.2rem;
+}
+
+@media (max-width: 750px) {
+    .container {
+        flex-direction: column;
+        justify-content: stretch;
+    }
+    .left {
+        min-width: 100%;
+        background-size: 100% 300%;
+        background-position: 0 1%;
+        justify-content: flex-start;
+    }
+}

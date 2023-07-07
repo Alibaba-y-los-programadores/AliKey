@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alikey</title>
+        <link rel="shortcut icon" href="../assets/img/Ellipse 1.png">
+        <link rel="stylesheet" href="../assets/css/onboarding.css">        
+        <link rel="stylesheet" href="../assets/css/login.css">
+        <link rel="stylesheet" href="../assets/css/styles.css">
+    </head>
+    <body>
+        <div class="container">
+			<div class="left">
+				<div class="logo">
+					<img src="../assets/img/logo.png" alt="Alikey" />
+					<h2>Alikey</h2>
+				</div>
+				<div class="image-stack">
+					<div class="text-overlay">
+						<h1>
+							¿Preocupado por la seguridad de tus contraseñas?
+						</h1>
+						<p>
+							Nuestro software de generador de contraseñas es la
+							solución perfecta para proteger tus cuentas en
+							línea. Con nuestra herramienta, puedes generar
+							contraseñas fuertes y seguras al instante.
+						</p>
+						<p>
+							¿Por qué es importante? Porque las contraseñas
+							débiles son fáciles de adivinar o hackear, lo que
+							pone en riesgo tus datos personales y
+							confidenciales.
+						</p>
+						<div class="columnas">
+							<div class="columna">
+								<div class="circulo-container">
+									<div class="circulo"></div>
+									<h3>Mayor seguridad</h3>
+								</div>
+								<p>Contraseñas encriptadas</p>
+							</div>
+							<div class="columna">
+								<div class="circulo-container">
+									<div class="circulo"></div>
+									<h3>Facil de usar</h3>
+								</div>
+								<p>Menu intuitivo</p>
+							</div>
+							<div class="columna">
+								<div class="circulo-container">
+									<div class="circulo"></div>
+									<h3>Super Protect</h3>
+								</div>
+								<p>Todo en un solo lugar</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="right">
+                <form id="form">
+                    <h2 class="form-title">Un gusto tenerte devuelta </h2>
+                    <div class="input-group">
+                        <label for="usuario">Usuario</label>
+                        <input type="text" name="Usuario" id="usuario"placeholder="Usuario" required>
+                        <label for="contraseña">Contraseña</label>
+                        <input type="password" name="Contraseña" id="contraseña"placeholder=" Contraseña" required>
+                    </div>
+                    <p id="recordarme"><input type ='checkbox' name="recordarme">Recordarme <a id="recuperar" href="#">¿Olvido su contraseña?</a></p>
+                    <input class="btn" type="submit" value="Ingresar">
+                </form>
+            </div>
+        </div>
+        <script src="../assets/script/login.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </body>
+</html>
+
+<!--
+    -Se agrego la sentencia required a los input usuario y contrasenia
+    -Se creo un script para la clase login ya que el de registro era incopatible
+    -Se le agrego el '..' a source ya que nose estaba llegando a la carpeta script
+-->

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/generador-de-contraseñas.css">
+    <link rel="shortcut icon" href="../assets/img/Ellipse 1.png">
+    <title>Generador de Contraseñas </title>
+</head>
+<body>
+    
+    <div class="contenedor">
+        <h1>Bienvenidos al Generador de Contraseñas </h1>
+
+        <p class="subtitulo">Crea una frase fácil de recordar y cambia algunas letras por números y caracteres especiales.</p>
+
+        <div class="contenedor-secundario">
+            <div class="contenedor-imagen">
+                <img src="../assets/img/seguridad-imagen.svg" alt="">
+            </div>
+        
+            <div class="contenedor-generador">
+                <div class="contraseña">
+                    <p id="contraseña-generada"></p>
+                    <button id="copiar-contraseña" class="boton">Copiar</button>
+                    <button class="boton-guardar">Guardar</button>
+                </div>
+        
+                <div class="contenedor-longitud">
+                    <p class="subtitulo-dos">Longitud de la contraseña:</p>
+                    <p id="longitud-contraseña">12</p>
+                </div>
+        
+                <div class="rango">
+                    <button id="disminuir-rango">-</button>
+                    <input type="range" id="longitud" min="8" max="22" step="1" onchange="mostrarCantidad(this.value)">
+                    <button id="incrementar-rango">+</button>
+                </div>
+        
+                <p class="subtitulo-dos">Carácteres usados:</p>
+            
+                <div class="contenedor-caracteres">
+                    <div class="caracter">
+                        <input type="checkbox" name="" id="mayusculas" class="check">
+                        <label for="mayusculas">Mayúsculas</label>
+                    </div>
+            
+                    <div class="caracter">
+                        <input type="checkbox" name="" id="minusculas" class="check">
+                        <label for="minusculas">Minúsculas</label>
+                    </div>
+                
+                    <div class="caracter">
+                        <input type="checkbox" name="" id="numeros" class="check">
+                        <label for="numeros">Números</label>
+                    </div>
+            
+                    <div class="caracter"> 
+                        <input type="checkbox" name="" id="simbolos" class="check">
+                        <label for="simbolos">Símbolos</label>
+                    </div>
+                </div>
+        
+                <div id="error"></div>
+
+                <button id="boton-generar" class="boton boton-generar">Generar contraseña</button>
+            </div>
+    
+        </div>
+
+    </div>
+
+    <footer>
+        
+    </footer>
+
+    <script src="../assets/script/generador-de-contraseñas.js"></script>
+    
+</body>
+</html>

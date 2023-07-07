@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alikey</title>
+    <!-- Archivo CSS  -->
+    <link rel="stylesheet" href="../assets/css/dash_board.css" />
+    <link rel="shortcut icon" href="../assets/img/Ellipse 1.png" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <link rel="stylesheet" href="/assets/css/navbar.css" />
+
+    <!-- iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Open+Sans&family=Parisienne&display=swap" rel="stylesheet" />
+
+    <script src="https://kit.fontawesome.com/19062fdce1.js" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <!-- Sección nav -->
+    <div class="header">
+      <div class="sideNav">
+        <div class="logo">
+					<img src="../assets/img/logo.png" alt="Alikey" />
+					<h2>Alikey</h2>
+				</div>
+        
+        <div class="search">
+          <input type="text" placeholder="Buscar" />
+          <div class="btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+        <ul class="navLinks">
+          <li>
+            <a href="#">
+                <i class="fa-solid fa-lock"></i>
+                <p>Generar Contraseñas</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+                <i class="fa-solid fa-keyboard"></i>
+                <p>Categoria de Contraseñas</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+                <i class="fa-regular fa-comment-dots"></i>
+                <p>Contraseñas Frecuentes</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+                <i class="fa-regular fa-eye-slash"></i>
+                <p>Contraseñas Eliminadas</p>
+            </a>
+          </li>
+          <li><img class="linea" src="/assets/img/linea.png" alt="" /></li>
+          <li>
+            <a href="#">
+              <i class="fa-regular fa-user"></i>
+              <p>Usuario</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <p>Salir</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Sección Header -->
+    <div class="rigth">
+      <nav>
+      <div class="nav-responsive">
+        <div class="access">
+          <a href="#" id="notification"><i class="fa fa-bell"></i></a>
+          <a href="#" id="account"><i class="fa fa-user-circle-o"></i></a>
+        </div>
+      </div>
+      </nav>
+
+      <!-- Sección Main-->
+      <main id="main">
+        <section class="categories">
+          <div class="title-container">
+            <h1 id="title">Generar Contraseñas</h1>
+          </div>
+        </section>
+      </main>
+
+      <!---Sección Footer--->
+      <footer>
+        <div class="page-container">
+          <div class="container">
+            <p id="footer-title">
+              ¿De clic en siguiente para generar <br />
+              una contraseña?
+            </p>
+            <br />
+            <button type="button" id="item-btn">Siguiente</button>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="module" src="/assets/script/dash_board.js"></script>
+  </body>
+</html>
